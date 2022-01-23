@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".SiparisActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/dislinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/baslik1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BURGERLER"
+                    android:textAlignment="center"
+                    android:textColor="@color/sacmasapanrenk"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:id="@+id/urun2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/whopper" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:id="@+id/urun2baslik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:text="Big Çevo®"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/urun2icerik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3.5"
+                            android:text="Big Çevo® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan bir Çevrim Kapında® klasiği."
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/urun2buton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:backgroundTint="#00CDCD"
+                                android:onClick="btnurun2"
+                                android:text="Sepete Ekle"
+                                app:iconPadding="0dp" />
+
+                            <TextView
+                                android:id="@+id/urun2fiyat"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:text="15 TL"
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/urun3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/double_king_chicken" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:id="@+id/urun3baslik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:text="Double Çevo Chicken®"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/urun3icerik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3.5"
+                            android:text="2 adet Çevo Chicken® eti, susamlı sandviç ekmeği, mayonez ve doğranmış maruldan oluşan son derece sade bir lezzet alternatifi.  "
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/urun3buton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:backgroundTint="#00CDCD"
+                                android:onClick="btnurun3"
+                                android:text="Sepete Ekle"
+                                app:iconPadding="0dp" />
+
+                            <TextView
+                                android:id="@+id/urun3fiyat"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:text="17 TL"
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/baslik2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="PİZZALAR"
+                    android:textAlignment="center"
+                    android:textColor="@color/sacmasapanrenk"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:id="@+id/urun4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/urun4gorsel"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/acisiz_sucuklu_pizza" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:id="@+id/urun4baslik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:text="Acısız Sucuklu Pizza"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/urun4icerik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3.5"
+                            android:text="Özel Çevrim Kapında® hamuru üzerine nefis Çevrim Kapında pizza sosu, mozzarella peyniri, zeytin, marine mantar, dilimlenmiş sucuk, taze dilimlenmiş kırmızı ve yeşil biber!  "
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/urun4buton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:backgroundTint="#00CDCD"
+                                android:onClick="btnurun4"
+                                android:text="Sepete Ekle"
+                                app:iconPadding="0dp" />
+
+                            <TextView
+                                android:id="@+id/urun4fiyat"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:text="30 TL"
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                // urun4bitisnoktasi
+
+                <LinearLayout
+                    android:id="@+id/urun5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/urun5gorsel"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/sebzeli_pizza_1" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:id="@+id/urun5baslik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:text="Sebzeli Pizza"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/urun5icerik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3.5"
+                            android:text="Özel Çevrim Kapında® hamuru üzerine nefis Çevrim Kapında pizza sosu, mozzarella peyniri, brokoli, yeşil ve kırmızı biber, mantar, soğan ve siyah zeytin. Sebze severler için!"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/urun5buton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:backgroundTint="#00CDCD"
+                                android:onClick="btnurun5"
+                                android:text="Sepete Ekle"
+                                app:iconPadding="0dp" />
+
+                            <TextView
+                                android:id="@+id/urun5fiyat"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:text="27 TL"
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                //urun5bitis
+
+                <TextView
+                    android:id="@+id/baslik3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="SALATALAR"
+                    android:textAlignment="center"
+                    android:textColor="@color/sacmasapanrenk"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:id="@+id/urun6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/urun6gorsel"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/king_delight_ton_salata" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:id="@+id/urun6baslik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:text="Ton Balıklı Salata"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/urun6icerik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3.5"
+                            android:text="Akdeniz yeşilliği, ton balığı parçaları, tatlı mısır konservesi ve yanında muhteşem salata sosu ile yarattığı hafiflik duygusu."
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/urun6buton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:backgroundTint="#00CDCD"
+                                android:onClick="btnurun6"
+                                android:text="Sepete Ekle"
+                                app:iconPadding="0dp" />
+
+                            <TextView
+                                android:id="@+id/urun6fiyat"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:text="33 TL"
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/urun7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/urun7gorsel"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/king_delight_tavuklu_salata_1" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:id="@+id/urun7baslik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:text="Izgara Tavuklu Salata"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/urun7icerik"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3.5"
+                            android:text="Akdeniz yeşilliği, ızgara but eti, ince kaşar peyniri dilimleri, küp kesilmiş domates parçaları ve yanında muhteşem salata sosu ile mükemmel bir seçim.  "
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/urun7buton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:backgroundTint="#00CDCD"
+                                android:onClick="btnurun7"
+                                android:text="Sepete Ekle"
+                                app:iconPadding="0dp" />
+
+                            <TextView
+                                android:id="@+id/urun7fiyat"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:text="35 TL"
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/tvtoplamtutar"
+            android:layout_width="247dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="Toplam Tutar: 0 TL "
+            android:textColor="@color/sacmasapanrenk"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00CDCD"
+            android:fallbackLineSpacing="false"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="btnsepetegit"
+            android:text="sepete git"
+            android:textSize="19sp" />
+    </LinearLayout>
+</LinearLayout>

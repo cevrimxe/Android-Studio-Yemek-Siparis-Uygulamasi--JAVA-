@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#C18D8D"
+    android:outlineAmbientShadowColor="@color/sacmasapanrenk"
+    android:outlineSpotShadowColor="@color/sacmasapanrenk"
+    tools:context=".GirisActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="435dp"
+        android:layout_height="745dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/whatsapp_image_2021_11_23_at_01_04_48" />
+
+    <EditText
+        android:id="@+id/etad"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="252dp"
+        android:ems="10"
+        android:hint="Kullanıcı adı giriniz..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/sacmasapanrenk"
+        android:textColorHint="@color/sacmasapanrenk"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etsifre"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Sifre giriniz..."
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/sacmasapanrenk"
+        android:textColorHint="@color/sacmasapanrenk"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etad" />
+
+    <Button
+        android:id="@+id/btngiris"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="btngiris"
+        android:text="Giriş"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsifre" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="btnsifre"
+        android:text="Şifremi unuttum"
+        android:textColor="@color/sacmasapanrenk"
+        android:textColorHint="@color/sacmasapanrenk"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btngiris" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="anarenk">#FFFFFFFF</color>
+    <color name="ikincirenk">#FFFFFFFF</color>
+    <color name="ucuncurenk">#FFFFFFFF</color>
+    <color name="sacmasapanrenk">#FFFCDF</color>
+</resources>

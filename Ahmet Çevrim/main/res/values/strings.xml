@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Çevrim Kapında</string>
+    <string name="icecekspinnerbaslik">İçecek Seçiniz</string>
+    <string-array name="icecekspinner">
+        <item>İçecek İstemiyorum      0TL</item>
+        <item>330ml Coca Cola         6TL</item>
+        <item>330ml Coca Cola Zero    6TL</item>
+        <item>330ml Ice Tea Şeftali   6TL</item>
+        <item>330ml Ice Tea Limon     6TL</item>
+        <item>330ml Sprite            5TL</item>
+        <item>330ml Ayran             5TL</item>
+        <item>1L Coca Cola            12TL</item>
+        <item>200 IQ yapan içecek     9994TL</item>
+
+
+    </string-array>
+</resources>
